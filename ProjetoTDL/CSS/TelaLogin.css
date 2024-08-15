@@ -1,0 +1,66 @@
+
+.inserir input{
+display: block;
+margin-bottom: 10px;
+}
+
+.EsqueciSenha {
+    color: rgb(228, 135, 98);
+    padding-left: 50px;
+}
+
+#TDL {
+
+color: purple;
+font-size: 70px;
+font-weight: bolder;
+}
+img {
+align-items: left ;
+position: relative;
+width: 150px;
+top: 60px;
+right:12px;
+gap: 7px;
+}
+hr {
+position: relative;
+bottom: 15px;
+}
+h2 {
+position: relative;
+bottom: 45px;
+text-align: right;
+}
+
+#button {
+transition-duration: 0.4s;
+}
+
+#button:hover {
+background-color: rgb(91, 192, 77); 
+color: white;
+}
+
+.TelaPrincipal {
+background-color: seashell;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+padding: 20px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+border-radius: 20px;
+}
+hr {
+height:2px; 
+background-color: rgb(255, 84, 22);
+margin-top: 10px; 
+margin-bottom: 10px; 
+}
+
+input {
+border-radius: 8px;
+width: 250px;
+height: 40px;
+}
