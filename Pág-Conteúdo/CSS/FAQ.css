@@ -242,33 +242,30 @@ body{
     width: 100%;
     max-width: 400px;
 }
-/* Estilo geral do footer */
+
 footer {
-    background-color: #4b0082; /* Cor de fundo roxa */
+    background-color: #4b0082; 
     color: white;
     padding: 20px;
     text-align: center;
     margin-right: 3%;
+    border-radius: 8px;
 }
 
-/* Estilo do conteúdo do footer */
 #footer_content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Estilo das seções do footer */
 #footer_contacts, .footer-list, #footer_subscribe {
     margin: 20px 0;
 }
 
-/* Estilo dos títulos */
 h1, h3 {
     margin-bottom: 10px;
 }
 
-/* Estilo dos links */
 .footer-link {
     
     color: white;
@@ -280,7 +277,7 @@ h1, h3 {
     text-decoration: underline;
 }
 
-/* Estilo das redes sociais */
+
 #footer_social_media {
     display: flex;
     justify-content: center;
@@ -291,7 +288,7 @@ h1, h3 {
     margin: 0 10px;
 }
 
-/* Estilo do grupo de input */
+
 #input_group {
     display: flex;
     justify-content: center;
@@ -307,14 +304,14 @@ h1, h3 {
 #input_group button {
     padding: 10px;
     border: none;
-    background-color: #ff4500; /* Cor do botão */
+    background-color: var(--primaryColor); 
     color: white;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
 
 #input_group button:hover {
-    background-color: #ff6347; /* Cor do botão ao passar o mouse */
+    background-color: var(--btnColor); 
 }
 
 .faq-box {
