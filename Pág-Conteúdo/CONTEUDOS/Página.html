@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Página ? </title>
+    <link rel="stylesheet" href="/Pág-Conteúdo/CSS/Página.css">
+    <link rel="shortcut icon" href="/Quiz/img/logotipo-TDL.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="side-bar active">
+            <div class="close-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="menu">
+              <div class="item"><a href="index.html">Divulgação</a></div>
+              <div class="item">
+                <a class="sub-btn"></i>HelpTDL<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                  <a href="#" class="sub-item">Profissionais</a>
+                  <a href="#" class="sub-item">Acessibilidade</a>
+                  <a href="#" class="sub-item">Dicas</a>
+                </div>
+              </div>
+              <div class="item"><a href="index.html"></i>Recursos</a></div>
+              <div class="item">
+                <a class="sub-btn">Login</a>
+                <div class="sub-menu">
+                  <a href="#" class="sub-item">Cadastre-se</a>
+                  <a href="#" class="sub-item">Logar</a>
+                </div>
+              </div>
+              <div class="item"><a href="index.html"></i>Dúvidas Frequentes</a></div>
+            </div>
+          </div>      
+
+        <nav class="navbar">
+            <a href="#" class="active">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+
+        </nav>
+            </header>
+
+            <main>
+
+
+
+            </main>
+            
+            <!--
+            O Main será o conteúdo principal da página
+            -->
+
+            <section>
+
+
+            </section>
+
+            <!-- 
+            No section terá um carrossel, será uma outra forma de levar as pessoas as outras páginas
+            -->
+
+            <div>
+
+            </div>
+
+            <!-- 
+            Uma "tabela" de contatos 
+            -->
+
+            <script type="text/javascript">
+                $(document).ready(function(){
+        
+                  $('.sub-btn').click(function(){
+                    $(this).next('.sub-menu').slideToggle();
+                    $(this).find('.dropdown').toggleClass('rotate');
+                  });
+        
+                  $('.menu-btn').click(function(){
+                    $('.side-bar').addClass('active');
+                    $('.menu-btn').css("visibility", "hidden");
+                  });
+        
+                  $('.close-btn').click(function(){
+                    $('.side-bar').removeClass('active');
+                    $('.menu-btn').css("visibility", "visible");
+                  });
+        
+                });
+            </script>
+            
+</body>
+</html>

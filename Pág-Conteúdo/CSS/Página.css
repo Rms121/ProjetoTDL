@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    color: #fff;
+    background: #09001d;
+    overflow: hidden;
+}
+  
+  .side-bar{
+    background: rgba(255,255,255 , 0.1);
+    backdrop-filter:blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+  }
+  
+  .side-bar.active{
+    left: 0;
+  }
+  
+  .side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+  }
+  
+  .side-bar .menu .item{
+    position:relative;
+    cursor:pointer;
+  }
+  
+  .side-bar .menu .item a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+  }
+  
+  .side-bar .menu .item a:hover{
+    background: #8621F8;
+    transition: 0.3s ease;
+  
+  }
+  
+  .side-bar .menu .item i{
+    margin-right: 15px;
+  }
+  
+  .side-bar .menu .item a .dropdown{
+  
+    position: absolute;
+    right:0;
+    margin: 20px;
+    transition: 0.3s ease;
+  }
+  
+  .side-bar .menu .item .sub-menu{
+    background: rgba(255,255,255 , 0.1);
+    display:none;
+  }
+  
+  .side-bar .menu .item .sub-menu a{
+    padding-left: 80px;
+  }
+  
+  .rotate{
+    transform: rotate(90deg);
+  }
+  
+  
+  .close-btn{
+    color: #fff;
+    font-size: 20px;
+    margin: 25px;
+    cursor: pointer;
+  }
+  
+  
+  .menu-btn{
+    position: relative;
+    left: -9vw;
+    top: -10px ;
+    color: #fff;
+    font-size: 20px;
+    margin: 25px;
+    cursor:pointer;
+  }
+
+.imglogo{
+    display: flex;
+    position: fixed;
+    height: 50px;
+    top: 20px;
+    left: 85px;
+    pointer-events: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(124, 70, 175);
+}
