@@ -40,14 +40,31 @@ function topFunction() {
 
 /* Button Font Size */
 
-let buttons = document.querySelector('.buttons');
-let btn = buttons.querySelectorAll('.btn');
-for (var i = 0; i < btn.length; i++){
-  btn[i].addEventListener('click', function(){
-    let current = document.getElementsByClassName('activ3');
-    current[0].classNamelassName = current[0].className.replace("activ3", "");
-    this.className += " activ3";
-  })
-};
+function aumentarFonte() {
+  let elementos = document.querySelectorAll('.content *' ); 
+  elementos.forEach(elemento => {
+      let tamanhoAtual = window.getComputedStyle(elemento, null).getPropertyValue('font-size');
+      let novoTamanho = Math.min(parseFloat(tamanhoAtual) + 2, 24); // Limite máximo de 24px
+      elemento.style.fontSize = novoTamanho + 'px';
+  });
+}
+
+function diminuirFonte() {
+  let elementos = document.querySelectorAll('.content *');
+  elementos.forEach(elemento => {
+      let tamanhoAtual = window.getComputedStyle(elemento, null).getPropertyValue('font-size');
+      let novoTamanho = Math.max(parseFloat(tamanhoAtual) - 2, 12); // Limite mínimo de 12px
+      elemento.style.fontSize = novoTamanho + 'px';
+  });
+}
+
+function resetarFonte() {
+  let elementos = document.querySelectorAll('.content *');
+  elementos.forEach(elemento => {
+      elemento.style.fontSize = '';
+  });
+}
+
+
 
 

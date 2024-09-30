@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
+    <div class="content">
     <header class="header">
         <div class="imglogo">
             <img src="/IMG/LogotipoTDL.png" alt="Logotipo/png">
@@ -65,17 +66,15 @@
     </header>
 
     <div class="container-btn">
-        <div class="buttons">
-         <span class="btn activ3" onclick="document.getElementById('container text-ajust').style.fontSize = '1em' ">A-</span>
-         <span class="btn" onclick="document.getElementById('container text-ajust').style.fontSize = '1.25em' ">A</span>
-         <span class="btn" onclick="document.getElementById('container text-ajust').style.fontSize = '1.75em' ">A+</span>
-        </div> 
+         <div class="font-controls">
+            <button onclick="aumentarFonte()" class="btn">A+</button>
+            <button onclick="resetarFonte()" class="btn">A</button>
+            <button onclick="diminuirFonte()" class="btn">A-</button>
+        </div>
      </div>
 
     <section class="home" id="home">
         <div class="home-text container">
-            <h2 class="home-title">Blog InfoTDL:</h2>
-            <span class="home-subtitle"> Comunicando e Informando</span>
         </div>
     </section>
 
@@ -222,6 +221,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="scrollTop">
         <img src="/IMG/top-button.png" alt="Voltar ao Topo">
     </button>
+   
 
         <footer class="footer">
             <p>Insira seu e-mail para receber notificações sobre nossas novidades!</p>
@@ -235,7 +235,8 @@
             </div>
             <p>© 2024 todos os direitos reservados</p>
         </footer>
-    
+    </div>
+
     <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
