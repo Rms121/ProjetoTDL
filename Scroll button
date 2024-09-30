@@ -1,0 +1,59 @@
+Css: 
+.scrollTop {
+  position: fixed;
+  right: 15px;
+  bottom: 80px;
+  border-radius: 100%;
+  background: var(--primaryColor);
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+  z-index: 9999;
+  height: 45px;
+  width: 45px;
+}
+
+.scrollTop:hover {
+  background-color: var(--HeaderColor);
+}
+
+.scrollTop img {
+  height: 35px;
+  width: auto;
+}
+
+.scrollTop .active {
+  opacity: 1;
+  visibility: visible;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+html: 
+<button onclick="topFunction()" id="myBtn" title="Go to top" class="scrollTop">
+            <img src="/IMG/top-button.png" alt="Voltar ao Topo">
+</button>
+
+javascript: 
+let mybutton = document.getElementById("myBtn");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+
