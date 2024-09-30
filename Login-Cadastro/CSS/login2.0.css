@@ -1,12 +1,14 @@
-* {
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,171 +17,144 @@ body {
 }
 
 .container {
-    width: 80%;
-    height: 80vh;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.212);
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .left-container {
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #A89AD9;
-    padding: 1rem;
+    padding: 2rem;
 }
 
-.left-container > h1 {
-    font-size: 23px;
-    font-weight: 800;
-    margin: 0;
-    margin-bottom: 10px;
-    position: relative;
-    right: -250px;
-    top: -180px;
+.left-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #50F296;
+    margin-bottom: 20px;
     text-align: center;
-    color: #D4D952;  
-    width: 100%;
-    white-space: nowrap;
 }
 
 .left-container img {
-    position: relative;
-    right: 140px;
-    top: 30px;
+    max-width: 100%;
+    height: auto;
 }
 
 .form {
     width: 50%;
+    padding: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 3rem;
 }
 
 .form-header {
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.btn-cadastro button {
-    background-color: #17db80;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
+.form-header h1 {
+    font-size: 1.5rem;
+    color: #333;
+    position: relative;
 }
 
-.btn-cadastro button a {
-    color: white;
-    text-decoration: none;
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #A89AD9;
+    margin: 10px auto;
+    border-radius: 5px;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1.5rem;
 }
 
 .input-box {
     margin-bottom: 1rem;
 }
 
-.textfield {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px 0px;
+.input-box label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-body {
+.input-box input {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #3A3959;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-.container {
-    width: 80%;
-    height: 80vh;
-    display: flex;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.212);
+.input-box input:focus {
+    outline: none;
+    border-color: #A89AD9;
 }
 
-.left-container {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.forgot-password {
+    font-size: 0.9rem;
+    color: #A89AD9;
+    text-decoration: none;
+    margin-top: 1.5rem; 
+    position: relative;
+    bottom: 10px;
+}
+
+.forgot-password:hover {
+    color: #9b84ee;
+}
+
+.continue-button button {
     background-color: #A89AD9;
-    padding: 1rem;
-}
-
-.left-container > h1 {
-    font-size: 23px;
-    font-weight: 800;
-    margin: 0;
-    margin-bottom: 10px;
-    position: relative;
-    right: -250px;
-    top: -180px;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     text-align: center;
-    color: #50F296;  
     width: 100%;
-    white-space: nowrap;
 }
 
-.left-container img {
-    position: relative;
-    right: 140px;
-    top: 30px;
-}
-
-.form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 3rem;
-}
-
-.form-header {
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
+.continue-button button:hover {
+    background-color: #9b84ee;
 }
 
 .btn-cadastro {
+    margin-top: 1rem;
     display: flex;
-    align-items: center;
+    justify-content: center; /
 }
 
 .btn-cadastro button {
-    height: 30px;
-    width: 150px;
-    border: none;
     background-color: #A89AD9;
-    padding: 0.4rem 1rem;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    position: relative;
-    top: 140px;
-    right: -52.7vw;
+    text-align: center;
+    width: 50%; 
 }
 
 .btn-cadastro button:hover {
@@ -187,210 +162,27 @@ body {
 }
 
 .btn-cadastro button a {
+    color: white;
     text-decoration: none;
-    font-weight: 500;
-    color: #ffff;
 }
 
-.forgot-password {
-    color: #A89AD9; 
-    font-size: 16px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    transition: color 0.3s ease;
-    white-space: nowrap;
-    position: relative;
-    top: 265px;
-    right: 17vw;
-}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 
-.forgot-password:hover {
-    color: #9b84ee;
-    cursor: pointer;
-}
+    .left-container {
+        width: 100%;
+        padding: 1rem;
+    }
 
-.form-header h1 {
-    width: 100%;
-    position: relative;
-    left: -7vw;
-    top: -100px;
-}
+    .form {
+        width: 100%;
+        padding: 1rem;
+    }
 
-.form-header h1::after {
-    content: '';
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #A89AD9;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
-}
-
-.input-group {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1rem 0;
-    position: relative;
-    left: 25vw;
-}
-
-.input-box {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-}
-
-.textfield {
-    position: relative;
-    right: 21vw;
-    top: 30px;
-}
-
-.textfield input {
-    width: 35vw;
-    height: 100%;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #f1f1f1;
-    margin-top: 5px;
-}
-
-.usuario {
-    position: relative;
-    right: -180px;
-    bottom: 80px;
-}
-
-.senha {
-    position: relative;
-    right: -180px;
-    bottom: 50px;
-}
-
-.input-box input {
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #00001c;
-}
-
-.input-box input:hover {
-    background-color: #eeeeee75;
-}
-
-.input-box input:focus-visible {
-    outline: 1px solid #9b84ee;
-}
-
-.input-box label {
-    font-size: 15px;
-    font-weight: 600;
-    color: #00001c;
-    white-space: nowrap;
-}
-
-.input-box input::placeholder {
-    color: #00001cbe;
-}
-
-.continue-button {
-    width: 100%;
-    margin-top: 2.5rem;
-}
-
-.continue-button button {
-    width: 35vw;
-    height: 45px;
-    border: none;
-    background-color: #A89AD9;
-    padding: 0.62rem;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    right: 29vw;
-    top: 20vw;
-}
-
-.continue-button button:hover {
-    background-color: #9b84ee;
-}
-
-.continue-button button a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #ffff;
-}
-
-h6 {
-    font-size: 15px;
-    position: relative;
-    top: 130px;
-    left: -120px;
-}
-
-.Home-btn {
-    width: 50px;
-    position: relative;
-    top: -40px;
-    left: 60vw;
-}
-
-.Home-btn {
-    cursor: pointer;
-}
-
-@media screen and (max-width: 1080px){
+    .btn-cadastro button,
     .continue-button button {
-        position: relative;
-        right: 28vw;
-        top: 21vw;
+        width: 100%;
     }
-
-    .usuario {
-        position: relative;
-        right: -210px;
-        bottom: 80px;
-    }
-    
-    .senha {
-        position: relative;
-        right: -210px;
-        bottom: 50px;
-    }
-
-    .left-container > h1 {
-        position: relative;
-        right: -270px;
-        top: -220px;
-    }
-
-    .Home-btn {
-        width: 50px;
-        position: relative;
-        top: -70px;
-        left: 58vw;
-    }
-
-    .btn-cadastro button {
-        position: relative;
-        top: 160px;
-        right: -53vw;
-    }
-
-    .forgot-password {
-        position: relative;
-        top: 280px;
-        right: 17vw;
-    }
-
-    .form-header h1 {
-        position: relative;
-        left: -7vw;
-        top: -130px;
-    }
-}    
+}

@@ -4,54 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login </title>
-    <link rel="stylesheet" href="/CSS/login2.0.min.css">
-    <link rel="shortcut icon" href="/IMG/logotipo-TDL.svg" type="image/x-icon">
+    <title>Login</title>
+    <link rel="stylesheet" href="/Login-Cadastro/CSS/login2.0.css">
+    <link rel="shortcut icon" href="/Login-Cadastro/IMG/logotipo-TDL.svg" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
         <div class="left-container">
-            <h1>TDL: Conhecimento para <br> Transformar Vidas </h1>
-            <img src="/IMG/team-work-animate purple.svg" alt="Imagem-TDL">
+            <h1>InfoTDL: Comunicando e Informando</h1>
+            <img src="/Login-Cadastro/IMG/team-work-animate purple.svg" alt="Imagem-TDL">
         </div>
         <div class="form">
             <form action="">
-                <div  class="close">
-                    <a href="/HTML/Index.html">
-                        <img src="/IMG/211652_close_icon.svg" alt="Home Button" class="Home-btn">
-                    </a>
-                </div>
                 <div class="form-header">
-                    <div class="title">
+                    <h1>Login</h1>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="usuario" class="usuario">Usuário</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required minlength="3" maxlength="25">
                     </div>
-                    <div class="btn-cadastro">
-                        <button><a href="/HTML/Cadastro.html"> Cadastra-se </a></button>
+                    <div class="input-box">
+                        <label for="senha" class="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required minlength="3" maxlength="25">
                     </div>
-
-                    <div class="input-group">
-                        <div class="input-box">
-                            <div class="right-login">
-                                    <h1>Login</h1>
-                                    <div class="textfield">
-                                        <label for="usuario" class="usuario">Usuário</label>
-                                        <input type="text" id="usuario" class="usuario" name="usuario"
-                                            placeholder="Usuário" required minlength="3" maxlength="25">
-                                    </div>
-                                    <div class="textfield">
-                                        <label for="senha" class="senha">Senha</label>
-                                        <input type="password" id="senha" class="senha" name="senha" placeholder="Senha"
-                                            required minlength="3" maxlength="25">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="btn-esqueciSenha">
-                        <a href="/HTML/EsqueciMinhaSenha.html" class="forgot-password">Esqueci minha senha</a>
-                    </div>
-                    <div class="continue-button">
-                        <button><a href="/HTML/Index.html">Continue</a></button>
-                    </div>
+                </div>
+                <div class="btn-esqueciSenha">
+                    <a href="/Login-Cadastro/HTML/EsqueciMinhaSenha.html" class="forgot-password">Esqueci minha senha</a>
+                </div>
+                <div class="continue-button">
+                    <button type="submit">Continuar</button>
+                </div>
+                <div class="btn-cadastro">
+                    <button><a href="/Login-Cadastro/HTML/Cadastro.html">Cadastre-se</a></button>
+                </div>
             </form>
         </div>
     </div>

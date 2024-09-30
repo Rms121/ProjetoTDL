@@ -1,12 +1,14 @@
-* {
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,303 +17,149 @@ body {
 }
 
 .container {
-    width: 80%;
-    height: 80vh;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.212);
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .left-container {
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #A89AD9;
-    padding: 1rem;
+    padding: 2rem;
 }
 
-.left-container > h1 {
-    font-size: 23px;
-    font-weight: 800;
-    margin: 0;
-    margin-bottom: 10px;
-    position: relative;
-    right: -245px;
-    top: -180px;
+.left-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #50F296;
+    margin-bottom: 20px;
     text-align: center;
-    color: #50F296;  
-    width: 100%;
-    white-space: nowrap;
 }
 
 .left-container img {
-    position: relative;
-    right: 240px;
-    top: 30px;
+    max-width: 100%;
+    height: auto;
 }
 
 .form {
     width: 50%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 3rem;
 }
 
 .form-header {
-    margin-bottom: 3rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.login-button {
-    display: flex;
-    align-items: center;
-}
-
-.login-button button {
-    border: none;
-    background-color: #A89AD9;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    top: -145px;
-    right: -25.5vw;
-}
-
-.login-button button:hover {
-    background-color: #9b84ee;
-}
-
-.login-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #ffff;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .form-header h1 {
-    width: 100%;
-    white-space: nowrap;
+    font-size: 1.5rem;
+    color: #333;
     position: relative;
-    left: 39.25vw;
-    top: -130px;
 }
 
 .form-header h1::after {
     content: '';
     display: block;
-    width: 5rem;
-    height: 0.3rem;
+    width: 50px;
+    height: 4px;
     background-color: #A89AD9;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
 }
 
 .input-group {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1rem 0;
-    position: relative;
-    left: 25vw;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
 }
 
 .input-box {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-}
-
-.input-left {
-    position: relative;
-    right: 50px;
-}
-
-.input-right {
-    position: relative;
-    right: 10px;
-}
-
-.name {
-    position: relative;
-    top: -30px ;
-}
-
-.senha {
-    position: relative;
-    top: -30px;
-}
-
-.email {
-    position: relative;
-    top: 5px ;
-}
-
-.ConfirmSenha {
-    position: relative;
-    top: 5px ;
-}
-
-.input-box input {
-    margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 1px 1px 6px #00001c;
-    width: 16vw;
-}
-
-.input-box input:hover {
-    background-color: #eeeeee75;
-}
-
-.input-box input:focus-visible {
-    outline: 1px solid #9b84ee;
+    margin-bottom: 1rem;
 }
 
 .input-box label {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    color: #00001c;
-    white-space: nowrap;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
-.input-box input::placeholder {
-    color: #00001cbe;
-}
-
-.gender-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 0 0.5rem;
+.input-box input {
     width: 100%;
-    position: relative;
-    top: 12vw;
-    right: 12vw;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-.gender-input {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
+.input-box input:focus {
+    outline: none;
+    border-color: #A89AD9;
 }
 
-.female {
-    position: relative;
+/* Estilização do botão de fechar */
+.close {
+    position: absolute;
+    top: 20px;
     right: 20px;
 }
 
-.male {
-    position: relative;
-    right: -10px;
-}
-
-.others {
-    position: relative;
-    right: -30px;
-}
-
-.none {
-    position: relative;
-    right: -50px;
-}
-
-.gender-input input {
-    margin-right: 0.35rem;
-}
-
-.gender-input label {
-    font-size: 0.81rem;
-    font-weight: 600;
-    color: #0000006c;
+.home-btn {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 
 .continue-button {
-    width: 100%;
-    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .continue-button button {
-    width: 35vw;
-    border: none;
     background-color: #A89AD9;
-    padding: 0.62rem;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    position: relative;
-    right: 28vw;
-    top: 1.5vw;
 }
 
 .continue-button button:hover {
     background-color: #9b84ee;
 }
 
-.continue-button button a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #ffff;
-}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 
-h6 {
-    font-size: 15px;
-    position: relative;
-    top: 130px;
-    left: -120px;
-}
+    .left-container {
+        width: 100%;
+        padding: 1rem;
+    }
 
-.Home-btn {
-    position: relative;
-    top: -6vw;
-    left: 71vw;
-    width: 50px;
-}
+    .form {
+        width: 100%;
+        padding: 1rem;
+    }
 
-
-
-@media screen and (max-width: 1080px){
+    .btn-cadastro button,
     .continue-button button {
-        width: 35vw;
-        border: none;
-        background-color: #A89AD9;
-        padding: 0.62rem;
-        border-radius: 5px;
-        cursor: pointer;
-        position: relative;
-        right: 25.5vw;
-        top: 3vw;
+        width: 100%;
     }
-
-    h6 {
-        font-size: 15px;
-        position: relative;
-        top: 130px;
-        left: -140px;
-    }
-
-    .left-container > h1 {
-        position: relative;
-        right: -280px;
-        top: -210px;
-    }
-
-    .Home-btn {
-        position: relative;
-        top: -8vw;
-        left: 68vw;
-    }
-
-    .login-button button {
-        position: relative;
-        top: -160px;
-        right: -25.5vw;
-    }
-
-}    
-
+}
