@@ -181,6 +181,50 @@ section {
   padding: 3rem 0 2rem;
 }
 
+.container-btn {
+  position: fixed;
+  right: 15px;
+  bottom: 0.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.container-btn .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.container-btn .buttons .btn {
+  border-radius: 10px;
+  padding: 0 10px;
+  display: inline-flex;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.container-btn .buttons .btn .activ3 {
+  background-color: var(--HeaderColor);
+}
+
+.container-btn .buttons .btn:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.container-btn .buttons .btn:nth-child(3) {
+  font-size: 2rem;
+}
+
+
 .home {
   width: 100%;
   min-height: 440px;
@@ -297,6 +341,42 @@ section {
   font-size: 0.82rem;
   font-weight: 500;
 }
+
+.scrollTop {
+  position: fixed;
+  right: 15px;
+  bottom: 100px;
+  border-radius: 100%;
+  background: var(--primaryColor);
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+  z-index: 9999;
+  height: 45px;
+  width: 45px;
+}
+
+.scrollTop:hover {
+  background-color: var(--HeaderColor);
+}
+
+.scrollTop img {
+  height: 35px;
+  width: auto;
+}
+
+.scrollTop .active {
+  opacity: 1;
+  visibility: visible;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
 
 .footer {
   background-color: var(--navbarColor); 
