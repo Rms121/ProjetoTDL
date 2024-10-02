@@ -1,100 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 
-* {
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color:  #3A3959;
+  background-color: #3A3959;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
-
 
 .container {
   width: 80%;
   height: 80vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .left-container {
   width: 50%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #A89AD9;
-  padding: 1rem;
+  padding: 2rem;
+  border-radius: 10px 0 0 10px;
 }
 
-.left-container > h1 {
-  font-size: 25px;
+.left-container h1 {
+  font-size: 2rem;
   font-weight: 800;
-  margin: 0;
-  margin-bottom: 10px;
-  position: relative;
-  top: -15vw;
-  right: -18vw;
-  justify-content: center;
+  color: #50F296;
   text-align: center;
-  color: #50F296;  
-  max-width:100%; 
-  height:auto;
-  white-space: nowrap;
+  margin-bottom: 1rem;
 }
 
 .left-container img {
-  max-width:100%; 
-  height:auto;
-  position: relative;
-  right: 200px;
-  top: 3vw;
+  max-width: 60%;
+  height: auto;
 }
 
 .form {
+  height: 100%;
   background-color: #fff;
-  padding: 20px;
+  padding: 2rem;
   width: 300px;
   text-align: center;
+  border-radius: 0 10px 10px 0;
 }
 
 .illustration {
-  background-image: url('/Login-Cadastro/IMG/logotipo-TDL.svg');
-  width: 100%; max-width:100%; 
-  height: 50%;
-  background-size: cover;
-  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  color:  #A89AD9;
-  margin: 20px 0;
+  color: #A89AD9;
+  margin-bottom: 1rem;
 }
 
 input[type=email], input[type=text] {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px 0;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 button[type=submit] {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px 0;
+  width: 100%;
+  padding: 0.75rem;
   background-color: #A89AD9;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button[type=submit]:hover {
@@ -103,7 +98,7 @@ button[type=submit]:hover {
 
 .link {
   display: block;
-  margin-top: 10px;
+  margin-top: 1rem;
   color: #7A5DBE;
   text-decoration: none;
 }
@@ -111,37 +106,3 @@ button[type=submit]:hover {
 .link:hover {
   text-decoration: underline;
 }
-
-@media (max-width: 900px) {
-  .container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .left-container {
-      display: none;
-  }
-
-  .form {
-      width: 100%;
-  }
-
-  .illustration {
-     display: none;
-  }
-
-  .form {
-    border-radius: 8px;
-  }
-}
-
-@media (min-width:1500px) and (max-width:2000px ) {
-.illustration {
-  height: 40%;
-  width: 100%;
-}
-}
-
-
-
-

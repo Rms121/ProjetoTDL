@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esqueci Minha Senha</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="illustration"></div>
+  <h2>Esqueci Minha Senha</h2>
+  <form onsubmit="handleSubmit(event)">
+    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+    <input type="text" name="verification-code" placeholder="Digite o código de verificação" maxlength="6" min="6" required>
+    <button type="submit">Enviar</button>
+  </form>
+  <a href="/Login-Cadastro/HTML/Login2.0.html" class="link">Voltar ao login</a>
+</div>
+<script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert('Senha alterada com sucesso!');
+    }
+  </script>
+</body>
+</html>
