@@ -23,7 +23,7 @@
                   </div>
                   <div class="item"><a href="index.html"></i>Recursos</a></div>
                   <div class="item">
-                    <a class="sub-btn">Login</a>
+                    <a class="sub-btn">Entrar</a>
                     <div class="sub-menu">
                       <a href="#" class="sub-item">Cadastre-se</a>
                       <a href="#" class="sub-item">Logar</a>
