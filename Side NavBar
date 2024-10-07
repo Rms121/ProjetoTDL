@@ -9,33 +9,37 @@ HTML:
             <a class="logo">InfoTDL</a>
 
             <!-- Start Side Bar -->
-            <div class="imglogo" src="/img/LogotipoTDL.png">
+                        <div class="imglogo" src="/img/LogotipoTDL.png">
             </div>
-              <div class="side-bar active">
-                <div class="close-btn">
-                  <i class="fas fa-times"></i>
-                </div>
-                <div class="menu">
-                  <div class="item"><a href="index.html">Divulgação</a></div>
-                  <div class="item">
-                    <a class="sub-btn"></i>HelpTDL<i class="fas fa-angle-right dropdown"></i></a>
-                    <div class="sub-menu">
-                      <a href="#" class="sub-item">Profissionais</a>
-                      <a href="#" class="sub-item">Acessibilidade</a>
-                      <a href="#" class="sub-item">Dicas</a>
-                    </div>
-                  </div>
-                  <div class="item"><a href="index.html"></i>Recursos</a></div>
-                  <div class="item">
-                    <a class="sub-btn">Entrar</a>
-                    <div class="sub-menu">
-                      <a href="#" class="sub-item">Cadastre-se</a>
-                      <a href="#" class="sub-item">Logar</a>
-                    </div>
-                  </div>
-                  <div class="item"><a href="index.html"></i>Dúvidas Frequentes</a></div>
-                </div>
+        </div>
+        <div class="side-bar active">
+          <div class="close-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="menu">
+            <div class="item"><a href="index.html">Divulgação</a></div>
+            <div class="item">
+              <a class="sub-btn"></i>HelpTDL<i class="fas fa-angle-right dropdown"></i></a>
+              <div class="sub-menu">
+                <a href="#" class="sub-item">Profissionais</a>
+                <a href="#" class="sub-item">Acessibilidade</a>
+                <a href="#" class="sub-item">Dicas</a>
               </div>
+            </div>
+            <div class="item"><a href="index.html"></i>Recursos</a></div>
+            <div class="item">
+              <a class="sub-btn">
+                  </i>Entrar
+                  <i class="fas fa-angle-right dropdown"></i>
+              </a>
+              <div class="sub-menu">
+                  <a href="#" class="sub-item">Login</a>
+                  <a href="#" class="sub-item">Cadastrar</a>
+              </div>
+              </div>
+            <div class="item"><a href="index.html"></i>Dúvidas Frequentes</a></div>
+          </div>
+        </div>
             <!-- End Side Bar -->
 
             <nav class="navbar">
