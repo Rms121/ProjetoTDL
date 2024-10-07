@@ -23,10 +23,14 @@
                   </div>
                   <div class="item"><a href="index.html"></i>Recursos</a></div>
                   <div class="item">
-                    <a class="sub-btn">Entrar</a>
+                    <a class="sub-btn">
+                        </i>Entrar
+                        <i class="fas fa-angle-right dropdown"></i>
+                    </a>
                     <div class="sub-menu">
-                      <a href="#" class="sub-item">Cadastre-se</a>
-                      <a href="#" class="sub-item">Logar</a>
+                        <a href="#" class="sub-item">Login</a>
+                        <a href="#" class="sub-item">Cadastrar</a>
+                    </div>
                     </div>
                   </div>
                   <div class="item"><a href="index.html"></i>Dúvidas Frequentes</a></div>
