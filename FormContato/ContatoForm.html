@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="/ContatoForm.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="shortcut icon" href="/Image/logotipo-TDL.svg" type="image/x-icon">
+</head>
+<body>
+    <small> Envie sua mensagem (opcional) e clique no botão "enviar" </small>
+<div class="wrapper centered">
+  <article class="letter">
+    <div class="side">
+      <h1>Contato</h1>
+      <form action="https://formsubmit.co/tdlsite@outlook.com.br" method="post">
+      <p>
+        <textarea placeholder="Escreva sua mensagem" name="message"></textarea>
+      </p>
+    </div>
+    <div class="side">
+        <p>
+            <input type="text" placeholder="Seu nome" name="name" class="name">
+          </p>
+          <p>
+            <input type="email" placeholder="Seu email" name="email" >
+          </p>
+          <p>
+            <button id="sendLetter" name="button">Enviar</button>
+          </p>
+      </form>
+    </div>
+  </article>
+
+  <div class="envelope front"></div>
+  <div class="envelope back"></div>
+</div>
+
+<p class="result-message centered">Obrigada pela sua mensagem! <br> aguarde o envio do formulário!</p>
+
+<div class="social-card">
+  <p class="social">Você também pode nos contatar em <br> <b>nossas redes sociais!</b></p>
+  <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:tdlsite@outlook.com.br"><i class='bx bxs-envelope'></i></a>
+
+  </div>
+</div>
+
+<script>
+    function addClass() {
+  document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass);
+</script>
+</body>
+</html>
